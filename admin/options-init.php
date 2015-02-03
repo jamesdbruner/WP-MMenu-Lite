@@ -299,6 +299,20 @@ if (!class_exists('mmenulite_Redux_Framework_config')) {
                     'subtitle' => __('Turn the search field on or off', 'mmenulite'),
                     'default'  => false,
                     ),
+                    array(
+                    'id'       => 'footer',
+                    'type'     => 'switch', 
+                    'title'    => __('Footer', 'mmenulite'),
+                    'subtitle' => __('Turn the footer on or off', 'mmenulite'),
+                    'default'  => false,
+                    ),
+                    array(
+                    'id' => 'footertitle',
+                    'type' => 'text',
+                    'required' => array('footer','equals','1'),
+                    'title' => __('Footer Title', 'mmenlite'),
+                    'subtitle' => __('Enter your own footer title', 'mmenulite'),
+                    ),
 
                 ),
 
